@@ -2,12 +2,15 @@ let ele;
 let p;
 let q;
 let r;
-function fun_lev_1(a) {
+function fun_lev_1(a, b) {
+    v = a;
     p = "level_" + a;
-    r = "level_" + (a - (-1));
     q = "pop_up_" + a;
-    document.getElementById(p).style.display = "block";
-    document.getElementById('home').style.display = "none";
+    if (b == 1) {
+        document.getElementById(p).style.display = "block";
+        document.getElementById('home').style.display = "none";
+    }
+
     ele = document.getElementById(p).innerHTML;
 }
 function back(a) {
@@ -87,6 +90,62 @@ function work(a) {
         document.getElementById(q).style.display = 'flex';
     }
 }
+
+function lv_1_next() {
+    document.getElementById('level_2').style.display = 'block';
+    document.getElementById('pop_up_1').style.display = 'none';
+    rest();
+    fun_lev_1('2','0');
+}
+function lv_2_next() {
+    document.getElementById('level_3').style.display = 'block';
+    document.getElementById('pop_up_2').style.display = 'none';
+    rest();
+    fun_lev_1('3','0');
+}
+function lv_3_next() {
+    document.getElementById('level_4').style.display = 'block';
+    document.getElementById('pop_up_3').style.display = 'none';
+    rest();
+    fun_lev_1('4','0');
+}
+function lv_4_next() {
+    document.getElementById('level_5').style.display = 'block';
+    document.getElementById('pop_up_4').style.display = 'none';
+    rest();
+    fun_lev_1('5','0');
+}
+function lv_5_next() {
+    document.getElementById('level_6').style.display = 'block';
+    document.getElementById('pop_up_5').style.display = 'none';
+    rest();
+    fun_lev_1('6','0');
+}
+function lv_6_next() {
+    document.getElementById('level_7').style.display = 'block';
+    document.getElementById('pop_up_6').style.display = 'none';
+    rest();
+    fun_lev_1('7','0');
+}
+function lv_7_next() {
+    document.getElementById('level_8').style.display = 'block';
+    document.getElementById('pop_up_7').style.display = 'none';
+    rest();
+    fun_lev_1('8','0');
+}
+function lv_8_next() {
+    document.getElementById('level_9').style.display = 'block';
+    document.getElementById('pop_up_8').style.display = 'none';
+    rest();
+    fun_lev_1('9','0');
+}
+function lv_9_next() {
+    document.getElementById('level_10').style.display = 'block';
+    document.getElementById('pop_up_9').style.display = 'none';
+    rest();
+    fun_lev_1('10','0');
+}
+
 
 
 function lv_1_home(a) {
@@ -174,17 +233,15 @@ function work2(a) {
     if (c == 1) {
         document.getElementById(p).style.display = 'none';
         document.getElementById(q).style.display = 'flex';
+
     }
 }
 
-function lv_1_next() {
-    document.getElementById(r).style.display = 'block';
-    document.getElementById(q).style.display = 'none';
-    rest();
-}
+
 
 
 function work3(a) {
+
     let x = "d" + a;
     let ch = 0;
     let ch2 = 0;
@@ -253,11 +310,13 @@ function work3(a) {
     if (c == 1) {
         document.getElementById(p).style.display = 'none';
         document.getElementById(q).style.display = 'flex';
+
     }
 }
 
 
 function work4(a) {
+
     let x = "e" + a;
     let ch = 0;
     let ch2 = 0;
@@ -327,6 +386,7 @@ function work4(a) {
     if (c == 1) {
         document.getElementById(p).style.display = 'none';
         document.getElementById(q).style.display = 'flex';
+
     }
 }
 
@@ -334,6 +394,7 @@ function work4(a) {
 
 
 function work5(a) {
+
     let x = "f" + a;
     let ch = 0;
     let ch2 = 0;
@@ -403,12 +464,14 @@ function work5(a) {
     if (c == 1) {
         document.getElementById(p).style.display = 'none';
         document.getElementById(q).style.display = 'flex';
+
     }
 }
 
 
 
 function work6(a) {
+
     let x = "g" + a;
     let ch = 0;
     let ch2 = 0;
@@ -478,6 +541,7 @@ function work6(a) {
     if (c == 1) {
         document.getElementById(p).style.display = 'none';
         document.getElementById(q).style.display = 'flex';
+
     }
 }
 
@@ -487,6 +551,7 @@ function work6(a) {
 
 
 function work7(a) {
+
     let x = "h" + a;
     let ch = 0;
     let ch2 = 0;
@@ -556,6 +621,7 @@ function work7(a) {
     if (c == 1) {
         document.getElementById(p).style.display = 'none';
         document.getElementById(q).style.display = 'flex';
+
     }
 }
 
@@ -564,6 +630,7 @@ function work7(a) {
 
 
 function work8(a) {
+
     let x = "i" + a;
     let ch = 0;
     let ch2 = 0;
@@ -632,6 +699,7 @@ function work8(a) {
     if (c == 1) {
         document.getElementById(p).style.display = 'none';
         document.getElementById(q).style.display = 'flex';
+
     }
 }
 
@@ -640,6 +708,7 @@ function work8(a) {
 
 
 function work9(a) {
+
     let x = "j" + a;
     let ch = 0;
     let ch2 = 0;
@@ -709,6 +778,7 @@ function work9(a) {
     if (c == 1) {
         document.getElementById(p).style.display = 'none';
         document.getElementById(q).style.display = 'flex';
+
     }
 }
 
@@ -718,6 +788,7 @@ function work9(a) {
 
 
 function work10(a) {
+
     let x = "k" + a;
     let ch = 0;
     let ch2 = 0;
@@ -787,5 +858,6 @@ function work10(a) {
     if (c == 1) {
         document.getElementById(p).style.display = 'none';
         document.getElementById(q).style.display = 'flex';
+
     }
 }
