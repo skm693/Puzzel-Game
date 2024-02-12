@@ -1,0 +1,99 @@
+body{
+    background-color: bisque;
+}
+#all{
+    text-align: center;
+    margin-top: 15vh;
+}
+#all h1{
+    font-size: 7vmin;
+}
+
+/* home */
+
+#home{
+    width: 100%;
+}
+#levels{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vmin;
+    margin-left: auto;
+    margin-right: auto;
+}
+#levels button{
+    height: 11.15vmin;
+    width: 11.15vmin;
+    margin: 5%;
+    background-color: rgb(238, 155, 54);
+    border: none;
+    cursor: pointer;
+    font-size: 5vmin;
+}
+
+/* level_1 */
+
+.lvl_1{
+    width: 75vmin;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lvl_1 h1{
+    font-size: 6vmin;
+}
+.struc{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+.struc button{
+    width: 15vmin;
+    height: 15vmin;
+    cursor: pointer;
+    font-size: 7vmin;
+    background-color:rgb(212, 232, 124);
+    /* background-color: rgb(255, 187, 71); */
+}
+.but{
+    margin-top: 4vmin;
+    display: flex;
+    justify-content: space-evenly;
+}
+.but button{
+    width: 15vmin;
+    height: 7vmin;
+    font-size: 2.5vmin;
+    border:none;
+    cursor: pointer;
+}
+
+
+/* pop up */
+
+.pop_up{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 75vmin;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pop_but{
+    
+    display: flex;
+    flex-direction: column;
+}
+.pop_up button{
+    width: 20vmin;
+    padding: 2vmin;
+    font-size: 3vmin;
+    margin: 2vmin;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+}

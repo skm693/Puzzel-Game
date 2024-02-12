@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzel Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div id="all">
+        <h1>Puzzel Game</h1>
+        <div id="home">
+            <div id="levels">
+                <button id="lev_1" onclick="fun_lev_1('1')">1</button>
+                <button id="lev_2" onclick="fun_lev_1('2')">2</button>
+                <button id="lev_3" onclick="fun_lev_1('3')">3</button>
+                <button id="lev_4" onclick="fun_lev_1('4')">4</button>
+                <button id="lev_5" onclick="fun_lev_1('5')">5</button>
+                <button id="lev_6" onclick="fun_lev_1('6')">6</button>
+                <button id="lev_7" onclick="fun_lev_1('7')">7</button>
+                <button id="lev_8" onclick="fun_lev_1('8')">8</button>
+                <button id="lev_9" onclick="fun_lev_1('9')">9</button>
+                <button id="lev_10" onclick="fun_lev_1('10')">10</button>
+            </div>
+        </div>
+
+        <div id="level_1" class="lvl_1" style="display: none;">
+            <h1>Level 1</h1>
+            <div class="struc">
+                <button id="b1" onclick="work('1')">1</button>
+                <button id="b2" onclick="work('2')">2</button>
+                <button id="b3" onclick="work('3')">3</button>
+                <button id="b4" onclick="work('4')">4</button>
+                <button id="b5" onclick="work('5')">5</button>
+                <button id="b6" onclick="work('6')">7</button>
+                <button id="b7" onclick="work('7')">6</button>
+                <button id="b8" onclick="work('8')">8</button>
+                <button id="b9" onclick="work('9')">9</button>
+                <button id="b10" onclick="work('10')">10</button>
+                <button id="b11" onclick="work('11')">11</button>
+                <button id="b12" onclick="work('12')">12</button>
+                <button id="b13" onclick="work('13')">13</button>
+                <button id="b14" onclick="work('14')">14</button>
+                <button id="b15" onclick="work('15')">15</button>
+                <button id="b16" onclick="work('16')"></button>
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('1')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_1" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('1')">Home</button>
+                <button onclick="restart('1')">Restart</button>
+                <button onclick="lv_1_next()">Next Level</button>
+            </div>
+        </div>
+        <div id="level_2" class="lvl_1" style="display: none;">
+            <h1>Level 2</h1>
+            <div class="struc">
+                <button id="c1" onclick="work2('1')">3</button>
+                <button id="c2" onclick="work2('2')">1</button>
+                <button id="c3" onclick="work2('3')">2</button>
+                <button id="c4" onclick="work2('4')">5</button>
+                <button id="c5" onclick="work2('5')">4</button>
+                <button id="c6" onclick="work2('6')">5</button>
+                <button id="c7" onclick="work2('7')">6</button>
+                <button id="c8" onclick="work2('8')">8</button>
+                <button id="c9" onclick="work2('9')">9</button>
+                <button id="c10" onclick="work2('10')">10</button>
+                <button id="c11" onclick="work2('11')">14</button>
+                <button id="c12" onclick="work2('12')">11</button>
+                <button id="c13" onclick="work2('13')">13</button>
+                <button id="c14" onclick="work2('14')">12</button>
+                <button id="c15" onclick="work2('15')">15</button>
+                <button id="c16" onclick="work2('16')"></button>
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('2')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_2" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('2')">Home</button>
+                <button onclick="restart()">Restart</button>
+                <button onclick="lv_1_next()">Next Level</button>
+            </div>
+        </div>
+        <div id="level_3" class="lvl_1" style="display: none;">
+            <h1>Level 3</h1>
+            <div class="struc">
+                <button id="d1" onclick="work3('1')">14</button>
+                <button id="d2" onclick="work3('2')">1</button>
+                <button id="d3" onclick="work3('3')">12</button>
+                <button id="d4" onclick="work3('4')">4</button>
+                <button id="d5" onclick="work3('5')">5</button>
+                <button id="d6" onclick="work3('6')">7</button>
+                <button id="d7" onclick="work3('7')">6</button>
+                <button id="d8" onclick="work3('8')">8</button>
+                <button id="d9" onclick="work3('9')">9</button>
+                <button id="d10" onclick="work3('10')">10</button>
+                <button id="d11" onclick="work3('11')">13</button>
+                <button id="d12" onclick="work3('12')">11</button>
+                <button id="d13" onclick="work3('13')">2</button>
+                <button id="d14" onclick="work3('14')">3</button>
+                <button id="d15" onclick="work3('15')">15</button>
+                <button id="d16" onclick="work3('16')"></button>
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('3')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_3" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('3')">Home</button>
+                <button onclick="restart()">Restart</button>
+                <button onclick="lv_1_next()">Next Level</button>
+            </div>
+        </div>
+        <div id="level_4" class="lvl_1" style="display: none;">
+            <h1>Level 4</h1>
+            <div class="struc">
+                <button id="e1" onclick="work4('1')">8</button>
+                <button id="e2" onclick="work4('2')">4</button>
+                <button id="e3" onclick="work4('3')">12</button>
+                <button id="e4" onclick="work4('4')">3</button>
+                <button id="e5" onclick="work4('5')">10</button>
+                <button id="e6" onclick="work4('6')">2</button>
+                <button id="e7" onclick="work4('7')">6</button>
+                <button id="e8" onclick="work4('8')">1</button>
+                <button id="e9" onclick="work4('9')">7</button>
+                <button id="e10" onclick="work4('10')">9</button>
+                <button id="e11" onclick="work4('11')">14</button>
+                <button id="e12" onclick="work4('12')">11</button>
+                <button id="e13" onclick="work4('13')">13</button>
+                <button id="e14" onclick="work4('14')">5</button>
+                <button id="e15" onclick="work4('15')">15</button>
+                <button id="e16" onclick="work4('16')"></button>
+
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('4')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_4" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('4')">Home</button>
+                <button onclick="restart()">Restart</button>
+                <button onclick="lv_1_next()">Next Level</button>
+            </div>
+        </div>
+        <div id="level_5" class="lvl_1" style="display: none;">
+            <h1>Level 5</h1>
+            <div class="struc">
+                <button id="f1" onclick="work5('1')">13</button>
+                <button id="f2" onclick="work5('2')">7</button>
+                <button id="f3" onclick="work5('3')">2</button>
+                <button id="f4" onclick="work5('4')">10</button>
+                <button id="f5" onclick="work5('5')">6</button>
+                <button id="f6" onclick="work5('6')">1</button>
+                <button id="f7" onclick="work5('7')">14</button>
+                <button id="f8" onclick="work5('8')">11</button>
+                <button id="f9" onclick="work5('9')">12</button>
+                <button id="f10" onclick="work5('10')">8</button>
+                <button id="f11" onclick="work5('11')">9</button>
+                <button id="f12" onclick="work5('12')">15</button>
+                <button id="f13" onclick="work5('13')">3</button>
+                <button id="f14" onclick="work5('14')">4</button>
+                <button id="f15" onclick="work5('15')">5</button>
+                <button id="f16" onclick="work5('16')"></button>
+
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('5')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_5" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('5')">Home</button>
+                <button onclick="restart()">Restart</button>
+                <button onclick="lv_1_next()">Next Level</button>
+            </div>
+        </div>
+        <div id="level_6" class="lvl_1" style="display: none;">
+            <h1>Level 6</h1>
+            <div class="struc">
+                <button id="g1" onclick="work6('1')">9</button>
+                <button id="g2" onclick="work6('2')">11</button>
+                <button id="g3" onclick="work6('3')">3</button>
+                <button id="g4" onclick="work6('4')">8</button>
+                <button id="g5" onclick="work6('5')">14</button>
+                <button id="g6" onclick="work6('6')">12</button>
+                <button id="g7" onclick="work6('7')">5</button>
+                <button id="g8" onclick="work6('8')">10</button>
+                <button id="g9" onclick="work6('9')">15</button>
+                <button id="g10" onclick="work6('10')">6</button>
+                <button id="g11" onclick="work6('11')">1</button>
+                <button id="g12" onclick="work6('12')">13</button>
+                <button id="g13" onclick="work6('13')">7</button>
+                <button id="g14" onclick="work6('14')">2</button>
+                <button id="g15" onclick="work6('15')">4</button>
+                <button id="g16" onclick="work6('16')"></button>
+
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('6')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_6" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('6')">Home</button>
+                <button onclick="restart()">Restart</button>
+                <button onclick="lv_1_next()">Next Level</button>
+            </div>
+        </div>
+        <div id="level_7" class="lvl_1" style="display: none;">
+            <h1>Level 7</h1>
+            <div class="struc">
+                <button id="h1" onclick="work7('1')">5</button>
+                <button id="h2" onclick="work7('2')">11</button>
+                <button id="h3" onclick="work7('3')">6</button>
+                <button id="h4" onclick="work7('4')">10</button>
+                <button id="h5" onclick="work7('5')">8</button>
+                <button id="h6" onclick="work7('6')">15</button>
+                <button id="h7" onclick="work7('7')">2</button>
+                <button id="h8" onclick="work7('8')">1</button>
+                <button id="h9" onclick="work7('9')">12</button>
+                <button id="h10" onclick="work7('10')">7</button>
+                <button id="h11" onclick="work7('11')">4</button>
+                <button id="h12" onclick="work7('12')">13</button>
+                <button id="h13" onclick="work7('13')">9</button>
+                <button id="h14" onclick="work7('14')">14</button>
+                <button id="h15" onclick="work7('15')">3</button>
+                <button id="h16" onclick="work7('16')"></button>
+
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('7')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_7" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('7')">Home</button>
+                <button onclick="restart()">Restart</button>
+                <button onclick="lv_1_next()">Next Level</button>
+            </div>
+        </div>
+        <div id="level_8" class="lvl_1" style="display: none;">
+            <h1>Level 8</h1>
+            <div class="struc">
+                <button id="i1" onclick="work8('1')">2</button>
+                <button id="i2" onclick="work8('2')">10</button>
+                <button id="i3" onclick="work8('3')">6</button>
+                <button id="i4" onclick="work8('4')">3</button>
+                <button id="i5" onclick="work8('5')">8</button>
+                <button id="i6" onclick="work8('6')">7</button>
+                <button id="i7" onclick="work8('7')">4</button>
+                <button id="i8" onclick="work8('8')">14</button>
+                <button id="i9" onclick="work8('9')">9</button>
+                <button id="i10" onclick="work8('10')">15</button>
+                <button id="i11" onclick="work8('11')">5</button>
+                <button id="i12" onclick="work8('12')">1</button>
+                <button id="i13" onclick="work8('13')">13</button>
+                <button id="i14" onclick="work8('14')">11</button>
+                <button id="i15" onclick="work8('15')">12</button>
+                <button id="i16" onclick="work8('16')"></button>
+
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('8')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_8" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('8')">Home</button>
+                <button onclick="restart()">Restart</button>
+                <button onclick="lv_1_next()">Next Level</button>
+            </div>
+        </div>
+        <div id="level_9" class="lvl_1" style="display: none;">
+            <h1>Level 9</h1>
+            <div class="struc">
+                <button id="j1" onclick="work9('1')">6</button>
+                <button id="j2" onclick="work9('2')">1</button>
+                <button id="j3" onclick="work9('3')">5</button>
+                <button id="j4" onclick="work9('4')">4</button>
+                <button id="j5" onclick="work9('5')">3</button>
+                <button id="j6" onclick="work9('6')">10</button>
+                <button id="j7" onclick="work9('7')">2</button>
+                <button id="j8" onclick="work9('8')">8</button>
+                <button id="j9" onclick="work9('9')">11</button>
+                <button id="j10" onclick="work9('10')">12</button>
+                <button id="j11" onclick="work9('11')">13</button>
+                <button id="j12" onclick="work9('12')">7</button>
+                <button id="j13" onclick="work9('13')">15</button>
+                <button id="j14" onclick="work9('14')">14</button>
+                <button id="j15" onclick="work9('15')">9</button>
+                <button id="j16" onclick="work9('16')"></button>
+
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('9')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_9" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('9')">Home</button>
+                <button onclick="restart()">Restart</button>
+                <button onclick="lv_1_next()">Next Level</button>
+            </div>
+        </div>
+        <div id="level_10" class="lvl_1" style="display: none;">
+            <h1>Level 10</h1>
+            <div class="struc">
+                <button id="k1" onclick="work10('1')">6</button>
+                <button id="k2" onclick="work10('2')">12</button>
+                <button id="k3" onclick="work10('3')">5</button>
+                <button id="k4" onclick="work10('4')">14</button>
+                <button id="k5" onclick="work10('5')">2</button>
+                <button id="k6" onclick="work10('6')">8</button>
+                <button id="k7" onclick="work10('7')">11</button>
+                <button id="k8" onclick="work10('8')">4</button>
+                <button id="k9" onclick="work10('9')">10</button>
+                <button id="k10" onclick="work10('10')">7</button>
+                <button id="k11" onclick="work10('11')">15</button>
+                <button id="k12" onclick="work10('12')">3</button>
+                <button id="k13" onclick="work10('13')">1</button>
+                <button id="k14" onclick="work10('14')">9</button>
+                <button id="k15" onclick="work10('15')">13</button>
+                <button id="k16" onclick="work10('16')"></button>
+
+            </div>
+            <div class="but">
+                <button onclick="rest()">Reset</button>
+                <button onclick="back('10')">Back</button>
+            </div>
+        </div>
+        <div id="pop_up_10" class="pop_up" style="display: none;">
+            <div>
+                <h1>Congratulations</h1>
+            </div>
+            <div class="pop_but">
+                <button onclick="lv_1_home('10')">Home</button>
+                <button onclick="restart()">Restart</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
