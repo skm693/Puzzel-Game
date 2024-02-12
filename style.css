@@ -68,6 +68,7 @@ body{
     font-size: 2.5vmin;
     border:none;
     cursor: pointer;
+    background-color: rgb(231, 171, 66);
 }
 
 
@@ -95,5 +96,6 @@ body{
     border-radius: 20px;
     border: none;
     cursor: pointer;
+    background-color: rgb(160, 160, 255);
 
 }
