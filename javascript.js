@@ -72,7 +72,7 @@ function work(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "b" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
@@ -161,7 +161,7 @@ function work2(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "c" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
@@ -240,7 +240,7 @@ function work3(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "d" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
@@ -314,7 +314,7 @@ function work4(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "e" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
@@ -390,7 +390,7 @@ function work5(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "f" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
@@ -465,7 +465,7 @@ function work6(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "g" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
@@ -543,7 +543,7 @@ function work7(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "h" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
@@ -619,7 +619,7 @@ function work8(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "i" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
@@ -696,7 +696,7 @@ function work9(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "j" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
@@ -774,7 +774,7 @@ function work10(a) {
 
 
     let c = 0;
-    for (i = 1; i <= 15; i++) {
+    for (i = 1; i <= 16; i++) {
         y = "k" + i;
         if (document.getElementById(y).innerHTML == i) {
             c = 1;
